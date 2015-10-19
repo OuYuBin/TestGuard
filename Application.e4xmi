@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ntbbkHRoEeWEmrSzHZwf8g" elementId="org.eclipse.e4.ide.application" bindingContexts="_ntbbmXRoEeWEmrSzHZwf8g">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_ntbbkXRoEeWEmrSzHZwf8g" label="com.gesila.test.guard.application" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_ntcCs3RoEeWEmrSzHZwf8g">
+      <children xsi:type="advanced:Perspective" xmi:id="_ntcCtHRoEeWEmrSzHZwf8g">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_qFimAHS2EeWCNZzHFAUjIA" elementId="com.gesila.test.guard.application.partsashcontainer.0" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_yXkGkHS2EeWCNZzHFAUjIA" elementId="com.gesila.test.guard.application.partsashcontainer.1">
+            <children xsi:type="basic:PartStack" xmi:id="_SJws4HS3EeWCNZzHFAUjIA" elementId="com.gesila.test.guard.application.partstack.0">
+              <children xsi:type="basic:Part" xmi:id="_09zJAHS2EeWCNZzHFAUjIA" elementId="com.gesila.test.guard.application.part.testoverview" contributionURI="bundleclass://com.gesila.test.guard.application/com.gesila.test.guard.application.parts.TestOverviewPart" label="Overview"/>
+            </children>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_ntcCtXRoEeWEmrSzHZwf8g">
+            <children xsi:type="basic:PartStack" xmi:id="_ntcpsHRoEeWEmrSzHZwf8g" elementId="com.gesila.test.guard.application.partstack.detail"/>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_9ZKO4HV-EeWj5dz7GVvoMg" elementId="com.gesila.test.guard.application.partsashcontainer.2">
+            <children xsi:type="basic:PartStack" xmi:id="_9-MOkHV-EeWj5dz7GVvoMg" elementId="com.gesila.test.guard.application.partstack.reponse">
+              <children xsi:type="basic:Part" xmi:id="_AxFM8HV_EeWj5dz7GVvoMg" elementId="com.gesila.test.guard.application.part.reponse" contributionURI="bundleclass://com.gesila.test.guard.application/com.gesila.test.guard.application.parts.ReponsePart" label="Response"/>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_ntcCrHRoEeWEmrSzHZwf8g" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_ntcCrXRoEeWEmrSzHZwf8g" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ntcCrnRoEeWEmrSzHZwf8g" label="Open" iconURI="platform:/plugin/com.gesila.test.guard.application/icons/sample.png" command="_ntcCo3RoEeWEmrSzHZwf8g"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ntcCr3RoEeWEmrSzHZwf8g" label="Save" iconURI="platform:/plugin/com.gesila.test.guard.application/icons/save_edit.png" command="_ntcCpnRoEeWEmrSzHZwf8g"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ntcCsHRoEeWEmrSzHZwf8g" label="Quit" command="_ntbbnHRoEeWEmrSzHZwf8g"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_ntcCsXRoEeWEmrSzHZwf8g" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ntcCsnRoEeWEmrSzHZwf8g" label="About" command="_ntcCqXRoEeWEmrSzHZwf8g"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_ntcpsnRoEeWEmrSzHZwf8g">
+      <children xsi:type="menu:ToolBar" xmi:id="_ntcps3RoEeWEmrSzHZwf8g" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ntcptHRoEeWEmrSzHZwf8g" iconURI="platform:/plugin/com.gesila.test.guard.application/icons/sample.png" command="_ntcCo3RoEeWEmrSzHZwf8g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ntcptXRoEeWEmrSzHZwf8g" iconURI="platform:/plugin/com.gesila.test.guard.application/icons/save_edit.png" command="_ntcCpnRoEeWEmrSzHZwf8g"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_ntcCoHRoEeWEmrSzHZwf8g" elementId="com.gesila.test.guard.application.handler.quitCommand" contributionURI="bundleclass://com.gesila.test.guard.application/com.gesila.test.guard.application.handlers.QuitHandler" command="_ntbbnHRoEeWEmrSzHZwf8g"/>
+  <handlers xmi:id="_ntcCpHRoEeWEmrSzHZwf8g" elementId="com.gesila.test.guard.application.handler.openCommand" contributionURI="bundleclass://com.gesila.test.guard.application/com.gesila.test.guard.application.handlers.OpenHandler" command="_ntcCo3RoEeWEmrSzHZwf8g"/>
+  <handlers xmi:id="_ntcCp3RoEeWEmrSzHZwf8g" elementId="com.gesila.test.guard.application.handler.saveCommand" contributionURI="bundleclass://com.gesila.test.guard.application/com.gesila.test.guard.application.handlers.SaveHandler" command="_ntcCpnRoEeWEmrSzHZwf8g"/>
+  <handlers xmi:id="_ntcCqnRoEeWEmrSzHZwf8g" elementId="com.gesila.test.guard.application.handler.aboutCommand" contributionURI="bundleclass://com.gesila.test.guard.application/com.gesila.test.guard.application.handlers.AboutHandler" command="_ntcCqXRoEeWEmrSzHZwf8g"/>
+  <bindingTables xmi:id="_ntcCoXRoEeWEmrSzHZwf8g" bindingContext="_ntbbmXRoEeWEmrSzHZwf8g">
+    <bindings xmi:id="_ntcConRoEeWEmrSzHZwf8g" keySequence="M1+Q" command="_ntbbnHRoEeWEmrSzHZwf8g"/>
+    <bindings xmi:id="_ntcCpXRoEeWEmrSzHZwf8g" keySequence="M1+O" command="_ntcCo3RoEeWEmrSzHZwf8g"/>
+    <bindings xmi:id="_ntcCqHRoEeWEmrSzHZwf8g" keySequence="M1+S" command="_ntcCpnRoEeWEmrSzHZwf8g"/>
+    <bindings xmi:id="_ntcCq3RoEeWEmrSzHZwf8g" keySequence="M1+A" command="_ntcCqXRoEeWEmrSzHZwf8g"/>
+  </bindingTables>
+  <rootContext xmi:id="_ntbbmXRoEeWEmrSzHZwf8g" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_ntbbmnRoEeWEmrSzHZwf8g" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_ntbbm3RoEeWEmrSzHZwf8g" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <descriptors xmi:id="_qn8Y8HU5EeWj5dz7GVvoMg" elementId="com.gesila.test.guard.application.partdescriptor.detail" closeable="true" dirtyable="true" contributionURI="bundleclass://com.gesila.test.guard.application/com.gesila.test.guard.application.parts.SamplePart"/>
+  <commands xmi:id="_ntbbnHRoEeWEmrSzHZwf8g" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_ntcCo3RoEeWEmrSzHZwf8g" elementId="com.gesila.test.guard.application.open" commandName="openCommand"/>
+  <commands xmi:id="_ntcCpnRoEeWEmrSzHZwf8g" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_ntcCqXRoEeWEmrSzHZwf8g" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_ntbbknRoEeWEmrSzHZwf8g" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_ntbbk3RoEeWEmrSzHZwf8g" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_ntbblHRoEeWEmrSzHZwf8g" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_ntbblXRoEeWEmrSzHZwf8g" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_ntbblnRoEeWEmrSzHZwf8g" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_ntbbl3RoEeWEmrSzHZwf8g" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_ntbbmHRoEeWEmrSzHZwf8g" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
