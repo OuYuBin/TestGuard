@@ -147,8 +147,13 @@ public class TestOverviewPart {
 			}
 
 		});
-		String[] models = new String[] { "http://localhost:8080/cloud-admin/v1/classes/login?name=admin&pass=111111",
-				"http://localhost:8080/cloud-admin/v1/classes/channelstat/summary", "http://www.163.com", "http://localhost:8080/cloud-nat" };
+		String[] models = new String[] { "http://localhost:8080/cloud-nat/v1/stat/channel",
+				"http://localhost:8080/cloud-admin/v1/classes/login?name=admin&pass=111111",
+				"http://localhost:8080/cloud-admin/v1/classes/channelstat/summary",
+				"http://localhost:8080/cloud-admin/v1/classes/channelstat/csv",
+				"http://localhost:8080/cloud-support/v1/login?username=13524631949&password=123456",
+				"http://localhost:8080/cloud-support/v1/news",
+				"http://localhost:8080/cloud-nat" };
 
 		treeViewer.setInput(models);
 	}

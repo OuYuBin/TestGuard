@@ -18,8 +18,10 @@ public class GesilaHttpClient implements IGesilaHttpClient {
 
 	private RequestType requestType;
 
+	private String requestJSON;
+
 	private CloseableHttpClient httpClient = HttpClients.createDefault();
-	
+
 	public GesilaHttpClient(Object url) {
 		this(url, RequestType.GET);
 	}
@@ -47,6 +49,14 @@ public class GesilaHttpClient implements IGesilaHttpClient {
 
 	public void setRequestType(RequestType requestType) {
 		this.requestType = requestType;
+	}
+
+	public String getRequestJSON() {
+		return requestJSON;
+	}
+
+	public void setRequestJSON(String requestJSON) {
+		this.requestJSON = requestJSON;
 	}
 
 }

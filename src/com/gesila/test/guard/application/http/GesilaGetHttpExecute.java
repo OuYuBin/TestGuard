@@ -9,6 +9,8 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.cookie.Cookie;
+import org.apache.http.params.HttpParams;
+import org.apache.http.protocol.HTTP;
 
 /**
  * 
@@ -24,6 +26,7 @@ public class GesilaGetHttpExecute extends GesilaHttpExecute {
 	public HttpResponse execute() {
 		String url = (String) gesilaHttpClient.getUrl();
 		HttpGet httpGet = new HttpGet(url);
+		httpGet.addHeader(HTTP.CONTENT_TYPE, "application/json");
 		try {
 			GesilaHttpClientContext gesilaHttpClientContext;
 			if (GesilaCookie.getInstance().gesilaHttpClientContext != null) {
@@ -35,9 +38,6 @@ public class GesilaGetHttpExecute extends GesilaHttpExecute {
 			if (200 == response.getStatusLine().getStatusCode()) {
 				createCookieStore(gesilaHttpClientContext);
 			}
-			
-			
-			
 			return response;
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();

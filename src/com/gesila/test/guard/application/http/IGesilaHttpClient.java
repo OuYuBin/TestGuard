@@ -14,5 +14,7 @@ public interface IGesilaHttpClient {
 	public HttpClient getHttpClient();
 	
 	public RequestType getRequestType();
+	
+	public String getRequestJSON();
 
 }
