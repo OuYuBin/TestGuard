@@ -57,6 +57,7 @@ public class ReponsePart {
 		column = new TreeColumn(treeViewer.getTree(), SWT.NONE);
 		column.setWidth(200);
 		column.setText("Value");
+		treeViewer.getTree().setHeaderVisible(true);
 
 		treeViewer.setContentProvider(new ITreeContentProvider() {
 
